@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Phone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="text-success fw-bold text-center mt-5 ">Search Your Phone</h1>
+    </header>
+    <!-- Phone search area -->
+    <main class="container">
+        <div class="input-group mb-5 w-50 mx-auto">
+            <input type="text" id="search-field" class="form-control" placeholder="Search your phone" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchPhone()" class="btn btn-outline-success" type="button" id="search-button">Search</button>
+        </div>
+        <h2 id="error" class="text-center text-danger"></h2>
+        <!-- ===single phone details=== -->
+        <div id="phone-details" class="w-50 mx-auto mb-5 ">
+            
+        </div>
+          <!--=== Phone search result=== -->
+        <div id="search-result" class=" row row-cols-1 row-cols-md-3 g-4">
+            
+        </div>
+          
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
